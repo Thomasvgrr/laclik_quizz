@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz interactif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quizz interactif</h1>
+
+    <div id="question"></div>
+
+    <div id="reponses">
+        <button onclick="verifierReponse(0)" id="btnReponse0"></button>
+        <button onclick="verifierReponse(1)" id="btnReponse1"></button>
+        <button onclick="verifierReponse(2)" id="btnReponse2"></button>
+        <button onclick="verifierReponse(3)" id="btnReponse3"></button>
+    </div>
+
+    <p id="score">Score: <span id="scoreValeur">0</span></p>
+
+    <button onclick="chargerQuestion()">Suivant</button>
+</div>
+
+<script src="quizz.js"></script>
+
+</body>
+</html>
